@@ -4,7 +4,12 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
-
+        newx<-matrix(data = NA, nrow= ncol(x), ncol= nrow(x))
+                for(i in seq(1:nrow(x)))
+                        for(j in seq(1:ncol(x)))
+                                newx[j,i]<- x[i,j]
+                        newx
+                        
 }
 
 
